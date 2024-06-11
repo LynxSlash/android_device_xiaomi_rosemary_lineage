@@ -14,6 +14,12 @@ $(call inherit-product, device/xiaomi/rosemary/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Dolby Atmos OnePlus stuff.
+$(call inherit-product-if-exists, hardware/dolby/dolby.mk)
+
+# MiuiCamera
+$(call inherit-product-if-exists, vendor/MiuiCameraLeica/config.mk)
+
 PRODUCT_NAME := lineage_rosemary
 PRODUCT_DEVICE := rosemary
 PRODUCT_MANUFACTURER := Xiaomi
