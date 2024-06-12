@@ -20,6 +20,15 @@ $(call inherit-product-if-exists, hardware/dolby/dolby.mk)
 # MiuiCamera
 $(call inherit-product-if-exists, vendor/MiuiCameraLeica/config.mk)
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
+
+# AlphaDroid
+ALPHA_BUILD_TYPE := UNOFFICIAL
+ALPHA_MAINTAINER := Lynxslash 
+WITH_GAPPS := true
+
 PRODUCT_NAME := lineage_rosemary
 PRODUCT_DEVICE := rosemary
 PRODUCT_MANUFACTURER := Xiaomi
